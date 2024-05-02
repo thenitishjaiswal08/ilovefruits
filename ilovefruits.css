@@ -1,0 +1,1207 @@
+.navigationebar{
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px black;
+    margin-top: 15px;
+    border-radius: 10px;
+    position: sticky;
+	top: 0px;
+	z-index: 4;
+}
+.scroll{
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px	;
+	width: 100%;
+	box-shadow: 0px 0px 30px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right:1% ;
+}
+.logo{
+    height: 90px;
+	width: 200px;
+	border-radius: 15px;
+	float: left;
+	background-image:url('photos/i love fruits logo 1.png');
+	background-size: cover;
+	margin-top: -15px;
+}
+.nav-btn{
+    height: 38px;
+	width: 38px;
+	float: right;
+	background-color: #b9e2e8;
+	border-color: transparent;
+	border-radius: 50px;
+	margin-right: 20px;
+	margin-top: 10px;
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);	
+}
+.logo-img-cart{
+    height: 22px; 
+    width: 25px; 
+    margin: 5px -10px; 
+    border-radius: 10%;
+}
+.logo-img-contact{
+    height: 21px; 
+    width: 20px; 
+    margin: 4px -8px; 
+    border-radius: 10%;
+}
+.logo-img-login{
+    height: 19px; 
+    width: 21px; 
+    margin: 8px -8px; 
+    border-radius: 5px;
+}
+.nav-btn:hover{
+    background-color: #135D66;
+}
+.nav-btn:active{
+    background-color: #b9e2e8;
+}
+.add-carrt-btn{
+    height: 43px;
+	width: 80px;
+	float: right;
+	background-color: orange;
+	border-color: transparent;
+	border-radius: 50px;
+	margin-right: 20px;
+	margin-top: 8px;
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);
+}
+.add-carrt-btn:hover{
+    background-color: #c38725;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+#add{
+	height: 200px;
+	background-color: #fff; 
+	border-radius: 30px; 
+	margin-top: 40px;
+	width: 92%;
+    box-shadow: 1px 1px 20px black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.control-box{
+	height: 55px;
+	width: 32%;
+	margin-top: 30px;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	background-color: #fff;
+    box-shadow: 1px 1px 20px black;
+}
+.search-input{
+    margin-left: 2%;
+    margin-right: 2%;
+	height: 30px;
+	width: 45%;
+	background-color: #b9e2e8;
+	border-color: transparent;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-top: 12px;
+    box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);	
+}
+.search-input:hover{
+	background-color:#135D66;
+	box-shadow:  6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);;
+}
+.fv-btn{
+	height: 30px;
+	width: auto;
+	background-color: orange;
+    color: #000;
+    font-size: 18px;
+	border-color: transparent;
+	border-radius: 5px;
+	margin-right: 10px;
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);	
+}
+.fv-btn:hover{
+	background-color: #c38725;
+	box-shadow:  6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);
+}
+.fv-btn:active{
+	background-color: #b9e2e8;
+}
+
+@media(max-width: 1270px) {
+    .control-box{
+        height: 55px;
+        width: 40%;
+    }
+    .search-input{
+        height: 30px;
+        width: 40%;
+    }
+    .fv-btn{
+        height: 30px;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.big-login-box{
+	height:100%;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(247, 217, 190, 0.6), rgb(248, 212, 186));
+	backdrop-filter: blur(0.3px);
+	border-radius: 10px;
+	position: fixed;
+	z-index: 3;
+	display: none;
+	transition: 2s;
+    top: 0;
+}
+.login-box{
+	height: 360px;
+	width: 265px;
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('photos/6.jpg');
+	box-shadow:0px 14px 25px;
+	position: fixed;
+	z-index: 4;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-20%) scale(0.1);
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.close-button{
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	border-color: transparent;
+	background-color:#b9e2e8;
+	height: 35px;
+	width: 35px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	font-size: 30px;
+	line-height: 22px;
+}
+.close-button:hover{
+	background-color: #135D66;
+}
+.login-word{
+	display: block;
+	font-size: 25px;
+	color: #fff;
+	font-weight: 50px;
+}
+.login-input{
+	border-color: transparent;
+	background-color: #fff;
+	border-radius: 6px;
+	height: 40px;
+	margin-top: 20px;
+	display: block;
+}
+.login-button{
+	display: block;
+	height: 40px;
+	width: 130px;
+	background-color: orange;
+	border-radius: 15px;
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);
+	border-color: transparent;
+	margin-top: 35px;
+
+}
+.login-button:hover{
+	background-color: #226b72;
+}
+.fcoptione{
+	color: #fff;
+	text-decoration: none;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+.coptione{
+	color: #fff;
+	text-decoration: none;
+}
+/*=======================================================================================================================================*/
+.ragistratione-box{
+	height: 360px;
+	width: 265px;
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('photos/9.jpg');
+	box-shadow:0px 14px 25px;
+	position: fixed;
+	z-index: 4;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-20%) scale(0.1);
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.ragistratione-button{
+	display: block;
+	height: 40px;
+	width: 130px;
+	background-color: orange;
+	border-radius: 15px;
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);
+	border-color: transparent;
+	margin-top: 40px;
+}
+.ragistratione-button:hover{
+	background-color: #226b72;
+}
+.ragistratione-word{
+	color: #fff;
+	font-size: 25px;
+}
+.ragistratione-input{
+	border-color: transparent;
+	background-color: #fff;
+	border-radius: 6px;
+	height: 30px;
+	margin-top: 20px;
+	display: block;
+}
+/*=========================================================================================================================================*/
+
+.forgotpassword-box{
+	height: 360px;
+	width: 265px;
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('photos/5.jpg');
+	box-shadow:0px 14px 25px;
+	position: fixed;
+	z-index: 4;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-20%) scale(0.1);
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.forgotpassword-button{
+	display: block;
+	height: 40px;
+	width: 130px;
+	background-color: orange;
+	border-radius: 15px;
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);
+	border-color: transparent;
+	margin-top: 20px;
+}
+.forgotpassword-button:hover{
+	background-color: #226b72;
+}
+.forgotpassword-word{
+	color: #fff;
+	font-size: 25px;
+}
+.forgotpassword-input{
+	border-color: transparent;
+	background-color: #fff;
+	border-radius: 6px;
+	height: 40px;
+	margin-top: 20px;
+	display: block;
+}
+/*=========================================================================================================================================*/
+
+.getpasword-box{
+	height: 360px;
+	width: 265px;
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('photos/1.jpg');
+	box-shadow:0px 14px 25px;
+	position: fixed;
+	z-index: 4;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-20%) scale(0.1);
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.getpasword-button{
+	display: block;
+	height: 40px;
+	width: 130px;
+	background-color: orange;
+	border-radius: 15px;
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3);
+	border-color: transparent;
+	margin-top: 20px;
+}
+.getpasword-button:hover{
+	background-color: red;
+}
+.getpasword-word{
+	color: #fff;
+	font-size: 25px;
+}
+.getpasword-input{
+	border-color: transparent;
+	background-color: #fff;
+	border-radius: 6px;
+	height: 40px;
+	margin-top: 20px;
+	display: block;
+}
+/* ====================================================================================================== */
+.contact-box{
+	height: 360px;
+	width: 265px;
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('photos/7.jpg');
+	box-shadow:0px 14px 25px;
+	position: fixed;
+	z-index: 4;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-20%) scale(0.1);
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.iconimg{
+	height:38px;
+	width: 38px;
+	margin-top: 35px;
+	border-radius:90px;
+	margin-left: 10px;
+
+}
+#hover:hover{
+	transform: scale(1.2,1.2);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+.fv-main-box{
+    /* position: fixed; */
+
+	/* display: none; */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.vegetable-main-box{
+    width: 1200px;
+    margin-left: 2%;
+    margin-right:  2%;
+    /* background-color: red; */
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.fruits-main-box{
+    width: 1500px;
+    margin-left: 2%;
+    margin-right:  2%;
+    /* background-color: black; */
+    /* display: none; */
+    /* display: none; */
+}
+.fruitsbox{
+	height: 220px;
+	width: 280px;
+	background-color: #fff;
+	border-radius: 20px;
+	margin-left: 15px;
+	margin-top: 10px;
+	box-shadow: 0px 0px 5px black;
+	z-index: 0;
+	display: inline-block;
+}
+.fruitsbox:hover{
+	transform: scale(1.05,1.05);
+	transition: 0.2s;
+}
+.fruits-box-div1{
+	height: 220px; 
+	width: 150px; 
+	display: inline-block;
+
+}
+.fruits-box-div2{
+	height: 220px; 
+	width: 130px; 
+	float: right;
+}
+.fruits-name-div{
+	height: 120px; 
+	width: 130px; 
+	border-radius: 20px;
+	margin-top: 20px;
+}
+.fruits-price-div{
+	height: 50px; 
+	width: 120px; 
+	margin-top: 10px; 
+	margin-left: 0px;
+}
+.fruits-img{
+	height: 130px; 
+	width: outo; 
+	margin-top: 10px; 
+	margin-left: 10px; 
+	float: left; 
+	display: inline-block;
+}
+.add-btn{
+	float: left; 
+	border-radius: 15px; 
+	height: 40px; 
+	width: 130px; 
+    color: #000;
+    font-size: 20px;
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3); 
+	background-color: orange; 
+	border: transparent;
+	margin-left: 20px; 
+	margin-top  : 25px;
+}
+.add-btn:hover{
+	background-color: #c38725;
+}
+.add-btn:active{
+	background-color: orange;
+}
+
+.fruits_name{
+	font-family:sans-serif ;
+	color: #226b72;	
+
+}
+#s-name{
+    font-size: 25px;
+}
+#d-name{
+    font-size: 20px;
+}
+#m-name{
+    font-size: 22px;
+}
+#b-name{
+    font-size: 19px;
+}
+#f-price{
+    font-size: 19px;
+    color: #a645c0;;
+}
+#n-p{
+    font-size: 10px;
+    color: red;
+}
+.off{
+	color: red;
+	font-size: 14px;
+    margin-top: 20px;
+}
+
+.quantity_btn{
+	float: right; 
+	margin-right: 20px; 
+	width: 100px; 
+	height: 40px; 
+	box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3); 
+	background-color: #b9e2e8; 
+	border: transparent; 
+	border-radius: 10px;
+    margin-top: 25px;
+}
+.quantity_btn:hover{
+	background-color: #226b72;
+}
+@media(max-width: 1499px) {
+    .fruits-main-box{
+        width: 1220px;
+    }
+    .vegetable-main-box{
+        width: 1220px;
+    }
+}
+@media(max-width: 1270px) {
+    .fruits-main-box{
+        width: 940px;
+    }
+    .vegetable-main-box{
+        width: 940px;
+    }
+}
+
+/* ================================================================================================================ */
+
+.service-main-div{
+    /* background-color: pink; */
+    height: 600px;
+    width: 1050px;
+    margin-top: 30px;
+}
+.service-div{
+    height: 220px;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+}
+.basket-img{
+    height: 210px;
+    border-radius: 20px; 
+    float: left;
+}
+.mango-img{
+    height: 180px; 
+    border-radius: 20px; 
+    float: left; 
+    margin-top: 20px; 
+    margin-left: 10px;
+}
+.dray-img{
+    height: 230px; 
+    border-radius: 20px; 
+    float: left;
+}
+.salad-img{
+    height: 160px; 
+    border-radius: 20px; 
+    float: left; 
+    margin-top: 30px;
+}
+.s-box1{
+    height:220px;
+    width: 170px;
+    /* background-color: red; */
+    display: inline-block;
+    float: left;
+}
+.s-box2{
+    height:250px;
+    width: 250px;
+    /* background-color: pink; */
+    display: inline-block;
+    float: right;
+    margin-right: -10px;
+}
+.service-btn{
+    height: 40px;
+    width: 150px;
+    margin-top: 40px;
+    box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 4px rgba(81,41,10,0.3); 
+	background-color: orange; 
+	border: transparent;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.service-btn:hover{
+	background-color: red;
+}
+.service-btn:active{
+	background-color: orange;
+}
+
+/* =========================================================================================================== */
+
+.footer{
+    background-color: #ebe4a8;
+    height: 150px;
+    width: 100%;
+}
+.f-1{
+    height: 130px;
+    width: 200px;
+    /* background-color: red; */
+    margin-left: 60px ;
+    line-height: 30px;
+    font-size: 15px;
+}
+.f-2{
+    height: 130px;
+    width: 200px;
+    /* background-color: red; */
+    margin-left: 60px ;
+    line-height: 30px;
+    font-size: 15px;
+
+
+}
+.f-3{
+    height: 100px;
+    width: 200px;
+    /* background-color: red; */
+    margin-left: 60px ;
+    line-height: 30px;
+    font-size: 15px;
+
+
+}
+.f-4{
+    background-color: red;
+    height: 110px;
+    width: 110px;
+    margin-top: 20px;
+    margin-left: 60px;
+    /* background-color: red; */
+    background-size: cover;
+    background-image: url("photos/my scaner.jpeg");
+}
+
+/* =============================================================================================================== */
+
+.whatsapp{
+	float: right;
+	height: 50px;
+	width: 50px;
+	background-image: url("photos/w.png");
+	background-size: cover;
+	z-index: 4;
+	position: sticky;
+	bottom: 4%;
+	left: 93%;
+	position: fixed;
+
+}
+.whatsapp:hover{
+    height: 52px;
+}
+
+/* ================================================================================================================ */
+.add-cart{
+    height: 100vh;
+    width: 300px;
+    z-index: 10;
+    background-color: rgb(158, 158, 196);
+    position: fixed;
+    /* float: right; */
+    display: inline-block;
+    margin-left: 65%;
+    /* visibility: hidden; */
+    transform: translate(90%,0%) scale(1);
+	/* visibility: hidden; */
+	transition: transform 0.8s;
+    box-shadow: 0px 1px 20px;
+}
+.close-btn{
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+    background-image: url('https://iconape.com/wp-content/png_logo_vector/close.png');
+    background-size: contain;
+    border-bottom-right-radius: 15px;
+    margin-left: -8px;
+    margin-top: -3px;
+}
+.close-btn:hover{
+    background-color: #c38725;
+}
+/* ==============================================[  880   ]======================================================== */
+
+ @media(max-width: 980px) {
+    .navigationebar{
+        height:110px;
+        width: 97%;
+        margin-left: 1.5%;
+    }
+    .logo{
+        height: 130px;
+        width: 285px;
+        margin-top: -10px;
+    }
+    .nav-btn{
+        height: 80px;
+        width: 80px;
+        margin-right: 30px;
+        margin-top: 15px;	
+    }
+    .add-carrt-btn{
+        height: 80px;
+        width: 168px;
+        margin-right: 20px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .button-logo{
+        height: 62px; 
+        width: 65px;
+    }
+    .logo-img-cart{
+        height: 42px; 
+        width: 45px;
+    }
+    .logo-img-contact{
+        height: 41px; 
+        width: 40px;
+    }
+    .logo-img-login{
+        height: 39px; 
+        width: 41px;
+    }
+
+
+    #add{
+        height: 250px;
+    }
+
+
+    .control-box{
+        height: 95px;
+        width: 80%;
+        border-radius: 20px;
+    }
+    .search-input{
+        height: 60px;
+        width: 45%;
+        margin-top: 20px;
+        border-radius: 20px;
+        margin-right: 5%;
+    }
+    .fv-btn{
+        height: 65px;
+        width:auto;
+        font-size: 32px;
+        border-radius: 20px;
+    }
+    .vegetable-main-box{
+        width: 925px;
+    }
+    .fruits-main-box{
+        width: 950px;
+    }
+    .fruitsbox{
+        height: 350px;
+        width: 420px;
+        margin: 13px 13px 13px 13px;
+    }
+    #s-name{
+        font-size: 45px;
+    }
+    #d-name{
+        font-size: 30px;
+    }
+    #m-name{
+        font-size: 35px;
+    }
+    #b-name{
+        font-size: 25px;
+    }
+    #f-price{
+        font-size: 37px;
+        color: #a645c0;;
+    }
+    #n-p{
+        color:transparent; 
+        margin-left:10px; 
+        font-size: 10px;
+    }
+    .fruits-box-div1{
+        height: 350px; 
+        width: 200px;
+        /* background-color: red;  */
+    }
+
+    .fruits-box-div2{
+        height: 220px; 
+        width: 208px; 
+        /* background-color: pink;  */
+    }
+    .fruits-name-div{
+        height: 153px; 
+        width: 208px; 
+        /* background-color: black;  */
+    }
+    .fruits-price-div{
+        height: 63px; 
+        width: 193px; 
+        /* background-color: yellow;     */
+    }
+    .fruits-img{
+        height: 200px; 
+        width: outo; 
+    }
+    .add-btn{
+        height: 70px; 
+        width: 200px; 
+        font-size: 40px;
+        margin-top: 45px;
+        background-color: orange;
+    }
+    .add-btn:hover{
+         background-color: orange; 
+    }
+    .off{
+        font-size: 30px;
+    }
+    
+    .quantity_btn{
+        width: 160px; 
+        height: 70px; 
+        font-size: 30px;
+        color: #000;
+        margin-top: 80px;
+    }
+    
+    .service-main-div{
+        height: auto;
+        width: 900px;
+        margin-top: 30px;
+    }
+    .service-div{
+        height: 320px;
+        width: 700px;
+    }
+    .s-box1{
+        height:220px;
+        width: 170px;
+    }
+    .s-box2{
+        height:250px;
+        width: 250px;
+        margin-right: -10px;
+    }
+    .service-btn{
+        height: 40px;
+        width: 150px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .basket-img{
+        height: 300px;
+    }
+    .mango-img{
+        height: 290px; 
+    }
+    .dray-img{
+        height: 330px; 
+    }
+    .salad-img{
+        height: 250px; 
+    }
+
+
+
+    .login-box{
+        height: 800px;
+        width: 600px;
+        border-radius: 50px;
+    }
+    .close-button{
+        height: 100px;
+        width: 100px;
+        font-size: 50px;
+        border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+       
+    }
+    .login-word{
+        margin-top: 70px;
+        font-size: 105px;
+    }
+    .login-input{
+        height: 80px;
+        width: 400px;
+        margin-top: 20px;
+        font-size: 40px;
+        border-radius: 50px;
+    }
+    .login-button{
+        display: block;
+        height: 100px;
+        width: 230px;
+        font-size: 50px;
+        border-radius: 50px;
+        margin-top: 55px;
+    
+    }
+    .fcoptione{
+        font-size: 40px;
+        margin-top: 130px;
+    }
+    .coptione{
+        color: #fff;
+        text-decoration: none;
+        font-size: 40px;
+    }
+    .ragistratione-box{
+        height: 800px;
+        width: 600px;
+        border-radius: 50px;
+    }
+    .ragistratione-button{
+        height: 100px;
+        width: 230px;
+        font-size: 50px;
+        border-radius: 50px;
+        margin-top: 75px;
+    }
+    
+    .ragistratione-word{
+        font-size: 100px;
+        line-height: 40px;
+    }
+    .ragistratione-input{
+        height: 80px;
+        width: 400px;
+        margin-top: 50px;
+        font-size: 40px;
+        border-radius: 50px;
+    }
+    .forgotpassword-box{
+        height: 800px;
+        width: 600px;
+        border-radius: 50px;
+    }
+    .forgotpassword-button{
+        height: 100px;
+        width: 230px;
+        font-size: 50px;
+        border-radius: 50px;
+        margin-top: 75px;
+    }
+    .forgotpassword-word{
+        margin-top: 70px;
+        font-size: 105px;
+    }
+    .forgotpassword-input{
+        height: 80px;
+        width: 400px;
+        margin-top: 20px;
+        font-size: 40px;
+        border-radius: 50px;
+    }
+    .getpasword-box{
+        height: 800px;
+        width: 600px;
+        border-radius: 50px;
+    }
+    .getpasword-button{
+        height: 100px;
+        width: 230px;
+        font-size: 50px;
+        border-radius: 50px;
+        margin-top: 75px;
+    }
+    .getpasword-word{
+        margin-top: 70px;
+        font-size: 105px;
+    }
+    .getpasword-input{
+        height: 80px;
+        width: 400px;
+        margin-top: 20px;
+        font-size: 40px;
+        border-radius: 50px;
+    }
+    .contact-box{
+        height: 800px;
+        width: 600px;
+        border-radius: 50px;
+    }
+    #c{
+        font-size: 100px;
+    }
+    #i{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .iconimg{
+        height:100px;
+        width: 100px;
+        margin-top: 35px;
+        border-radius:90px;
+        margin-left: 10px;
+    }
+
+    .whatsapp{
+        height: 150px;
+        width: 150px;
+        bottom: 1%;
+        left: 83%;  
+    }
+
+    .footer{
+        margin-top: 100px;
+        height: 250px;
+        width: 100%;
+    }
+    .f-1{
+        height: 130px;
+        width: 200px;
+        margin-left: 20px ;
+        font-size: 25px;
+    
+    
+    }
+    .f-2{
+        height: 130px;
+        width: 200px;
+        margin-top: 100px;
+        margin-left: 40px ;
+        font-size: 30px;
+    
+    
+    }
+    .f-3{
+        height: 150px;
+
+    }
+    .f-4{
+        height: 170px;
+        width: 170px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+}
+
+/* ================================================================================================================ */
+/* ==============================================[  980   ]======================================================== */
+/* @media(max-width: 980px) {
+	.navigationebar{
+        height:80px;
+    }
+    .logo{
+        height: 110px;
+        width: 265px;
+    }
+    .nav-btn{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+        margin-top: 15px;	
+    }
+    .nav-btn:hover{
+        background-color: #b9e2e8;
+    }
+    .nav-btn:active{
+        background-color: #b9e2e8;
+    }
+    .add-carrt-btn{
+        height: 50px;
+        width: 148px;
+        margin-right: 20px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .button-logo{
+        height: 42px; 
+        width: 45px;
+    }
+    .logo-img-cart{
+        height: 22px; 
+        width: 25px;
+    }
+    .logo-img-contact{
+        height: 21px; 
+        width: 20px;
+    }
+    .logo-img-login{
+        height: 19px; 
+        width: 21px;
+    }
+
+
+    #add{
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .control-box{
+        height: 65px;
+        width: 80%;
+        margin-top: 20px;
+    }
+    .search-input{
+        height: 35px;
+        width: 40%;
+        margin-top: 15px;
+        margin-right: 30px;
+        background-color: #b9e2e8;
+    }
+    .fv-btn{
+        height: 35px;
+        width: outo;
+        font-size: 18px;
+        color: #000;
+        background-color: orange;
+    }
+
+
+    .fruits-main-box{
+        width: 900px;
+        height: 1200px;
+    } 
+    .fruitsbox{
+        height: 220px;
+        width: 300px;
+        margin: 3px 3px 3px 3px;
+    }
+    .fruits-box-div1{
+        height: 128px; 
+        width: 141px; 
+    }
+    .fruits-box-div2{
+        height: 160px; 
+        width: 155px; 
+    }
+    .fruits-name-div{
+        height: 123px; 
+        width: 155px; 
+    }
+    .fruits-price-div{
+        height: 63px; 
+        width: 193px; 
+    }
+    .fruits-img{
+        height: 135px; 
+        width: outo;
+        margin-left: 0px; 
+    }
+    .add-btn{
+        height: 35px; 
+        width: 120px; 
+        font-size: 20px;
+        color: #000;
+        margin-top: 25px;
+        background-color: orange;
+        border-radius: 10px;
+    }
+    .add-btn:hover{
+         background-color: orange; 
+    }
+    .off{
+        font-size: 20px;
+    }   
+    .quantity_btn{
+        width: 110px; 
+        height: 35px; 
+        font-size: 18px;
+        color: #000;
+        margin-top: 18px;
+    }   
+} */
+
+/* ================================================================================================================ */
+/* ==============================================[  880   ]======================================================== */
+
+
+/* ================================================================================================================ */
+/* ==============================================[  880   ]======================================================== */

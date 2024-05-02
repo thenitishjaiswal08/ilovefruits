@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="ilovefruits.css">
+	<script src="ilovefruits.js"></script>
+    <title> main paage </title>
+</head>
+<body style="background-color: #135D66;">
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+    <nav class="navigationebar">
+        <div class="logo"></div>
+        <button class="add-carrt-btn">
+            <img src="photos\shopping.png" class="logo-img-cart" id="shoping-btn" onclick="opencart()">
+        </button>
+        <button class="nav-btn" onclick="opentloginpage()">
+            <img src="photos\ragistratione.png" class="logo-img-login" id="login-btn">
+        </button>
+        <button class="nav-btn"  onclick="opencontactpage()">
+            <img src="photos\phone.png" class="logo-img-contact" id="contect-btn">
+        </button>
+    </nav>
+
+
+	<div class="add-cart">
+		<button style="background-color:transparent; border-color:transparent; " onclick="closecart()"><div class="close-btn"></div></button>
+		<div style=" height:360px; width: 90%; margin-top: 30px; margin-left: 30px;">
+			<span style="font-size: 19px; padding-top: 30px;"> hii ! add yoour shoping</span>
+		</div>
+		<div>
+			<button class="add-btn" style="margin-left: 65px; font-size: 14px; ">make peyment</button>
+		</div>
+	</div>
+
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+
+<div class="big-login-box" onclick="closebigloginpge()"></div>
+	<div class="login-box">
+			<div><button onclick="closepage()" title="close" class="close-button">&times</button></div>
+			<br>
+			<form>
+			<center>
+					<span class="login-word">login</span>
+					<br>
+					<input type="email" name="email" requied="" placeholder=" email or phone number" class="login-input" style="margin-top: 10px;">
+					<input type="password" name="password" required="" placeholder=" password" class="login-input">
+
+					<button title="login" class="login-button">login</button>
+					<br><br>
+					<a href="#" class="fcoptione" onclick="openforgotpasswordpage()">forgot password</a>
+			 		<a href="#" onclick="openragistrationepage()" class="coptione">create account</a>
+				</center>
+			</form>
+		</div>
+
+
+	<div class="ragistratione-box">
+		<form>
+			<div>
+				<button title="close" class="close-button" onclick="closepager()">&times</button></div>
+					<center>
+						<br>
+						<span class="ragistratione-word">create account</span>
+						<input type="email" name="email" requied="" placeholder=" email id" class="ragistratione-input">
+						<input type="phone" name="email" requied="" placeholder=" phone number" class="ragistratione-input">
+						<input type="password" name="password" required="" placeholder=" password" class="ragistratione-input">
+    					<button class="ragistratione-button">create</button>	
+					</div>
+				</center>
+		</form>
+	</div>
+
+
+	<div class="forgotpassword-box">
+		<form>
+			<br><br>
+			<div><button onclick="closepagef()" title="close" class="close-button">&times</button></div>
+			<center>
+				<br>
+				<span class="forgotpassword-word">create account</span>
+				<input type="contact" name="contact" requied="" placeholder="  +91 |" class="forgotpassword-input">
+				<br>
+    					<button class="forgotpassword-button" onclick="getpaswordpage()">get otp</button>	
+				</div>
+			</center>
+		</form>
+	</div>
+	<div class="getpasword-box">
+		<form>
+			<br><br>
+			<div><button onclick="closepageg()" title="close" class="close-button">&times</button></div>
+				<center>
+				<br>
+				<span class="getpasword-word">create account</span>
+				<input type="contact" name="contact" requied="" placeholder="  OTP" class="getpasword-input">
+				<br>
+    				<button class="getpasword-button">get otp</button>	
+			</div>
+			</center>
+		</form>
+</div>
+
+<div class="contact-box">
+	<div><button onclick="closepag()" title="close" class="close-button">&times</button></div>
+
+	<center>
+		<h1 style="margin-top: 35px; color: #fff;" id="c">contact</h1>
+		<h6 style="margin-top: 35px; color: #fff;" id="i">thenitishjaiswal@gmail.com</h6>
+		<h6 style="margin-top: 15px; color: #fff;" id="i"> +91 9867657546 </h6>
+
+
+           <a href="https:www.instagram.com/ilovefruits.in" target="_blank" style="text-decoration: none;">
+            	<img src="photos\instagram.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://web.whatsapp.com/9867657546" target="_blank" style="text-decoration: none;">
+           	 <img src="photos\watsapp.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://twitter.com/nitishj87137878" target="_blank" style="text-decoration: none;">
+            <img src="photos\twiter.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://www.facebook.com/profile.php?id=100013471294419" target="_blank" style="text-decoration: none;">
+            <img src="photos\facebook.jpg" class="iconimg" id="hover"> 
+		   </a>
+	</center>
+</div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<center>
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 100%;">
+  	    <div class="carousel-indicators">
+    	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  	    </div>
+
+  	    <div class="carousel-inner" id="add">
+    	    <div class="carousel-item active">
+      		    <img src="photos\slide 6.jpg" class="d-block w-100" alt="..." style="background-size: cover;">
+    	    </div>
+    	    <div class="carousel-item">
+      		    <img src="photos\slide 7.jpg" class="d-block w-100" alt="..." style="background-size: cover;">
+    	    </div>
+    	    <div class="carousel-item">
+      		    <img src="photos\slide 1.jpg" class="d-block w-100" alt="..." style="background-size: cover;">
+    	    </div>
+  	    </div>
+
+  		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    		<span class="visually-hidden">Previous</span>
+  		</button>
+  		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    		<span class="visually-hidden">Next</span>
+  		</button>
+	</div>
+</center>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+
+<center>
+	<div class="control-box">
+		<table>
+			<td>
+				<tr><input type="texbox" name="" class="search-input"></tr>
+				<tr><button class="fv-btn" role="button" onclick="openfruits()">fruits</button></tr>
+				<tr><button class="fv-btn" role="button" onclick="openvegetable()">vegetable</button></tr>
+			</td>
+		</table>
+	</div>
+</center>
+
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+
+<div class="big-login-box" onclick="closebigloginpge()"></div>
+	<div class="login-box">
+			<div><button onclick="closepage()" title="close" class="close-button">&times</button></div>
+			<br>
+			<form>
+			<center>
+					<span class="login-word">login</span>
+					<br>
+					<input type="email" name="email" requied="" placeholder=" email or phone number" class="login-input" style="margin-top: 10px;">
+					<input type="password" name="password" required="" placeholder=" password" class="login-input">
+
+					<button title="login" class="login-button">login</button>
+					<br><br>
+					<a href="#" class="fcoptione" onclick="openforgotpasswordpage()">forgot password</a>
+			 		<a href="#" onclick="openragistrationepage()" class="coptione">create account</a>
+				</center>
+			</form>
+		</div>
+
+
+	<div class="ragistratione-box">
+		<form>
+			<div>
+				<button title="close" class="close-button" onclick="closepager()">&times</button></div>
+					<center>
+						<br>
+						<span class="ragistratione-word">create account</span>
+						<input type="email" name="email" requied="" placeholder=" email id" class="ragistratione-input">
+						<input type="phone" name="email" requied="" placeholder=" phone number" class="ragistratione-input">
+						<input type="password" name="password" required="" placeholder=" password" class="ragistratione-input">
+    					<button class="ragistratione-button">create</button>	
+					</div>
+				</center>
+		</form>
+	</div>
+
+
+	<div class="forgotpassword-box">
+		<form>
+			<br><br>
+			<div><button onclick="closepagef()" title="close" class="close-button">&times</button></div>
+			<center>
+				<br>
+				<span class="forgotpassword-word">create account</span>
+				<input type="contact" name="contact" requied="" placeholder="  +91 |" class="forgotpassword-input">
+				<br>
+    					<button class="forgotpassword-button" onclick="getpaswordpage()">get otp</button>	
+				</div>
+			</center>
+		</form>
+	</div>
+	<div class="getpasword-box">
+		<form>
+			<br><br>
+			<div><button onclick="closepageg()" title="close" class="close-button">&times</button></div>
+				<center>
+				<br>
+				<span class="getpasword-word">create account</span>
+				<input type="contact" name="contact" requied="" placeholder="  OTP" class="getpasword-input">
+				<br>
+    				<button class="getpasword-button">get otp</button>	
+			</div>
+			</center>
+		</form>
+</div>
+
+<div class="contact-box">
+	<div><button onclick="closepag()" title="close" class="close-button">&times</button></div>
+
+	<center>
+		<h1 style="margin-top: 35px; color: #fff;">contact</h1>
+		<h6 style="margin-top: 35px; color: #fff;">thenitishjaiswal@gmail.com</h6>
+		<h6 style="margin-top: 15px; color: #fff;"> +91 9867657546 </h6>
+
+
+           <a href="https:www.instagram.com/ilovefruits.in" target="_blank" style="text-decoration: none;">
+            	<img src="photos\instagram.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://web.whatsapp.com/9867657546" target="_blank" style="text-decoration: none;">
+           	 <img src="photos\watsapp.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://twitter.com/nitishj87137878" target="_blank" style="text-decoration: none;">
+            <img src="photos\twiter.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://www.facebook.com/profile.php?id=100013471294419" target="_blank" style="text-decoration: none;">
+            <img src="photos\facebook.jpg" class="iconimg" id="hover"> 
+		   </a>
+	</center>
+</div>
+</div>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+<center>
+</div>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<div class="fv-main-box">
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+<div class="vegetable-main-box">
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\1 patato.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">patato</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big>
+						<span class="off">20%off</span>
+					</b>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\2 onions.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">onions</span>
+					<div class="fruits-price-div" style="margin-top: 5px;">
+						<br>
+						<b><big id="f-price">500₹ 6pcs </big>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\3 tameto.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name"id="b-name">tameto</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\4 brinjal.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">brinjal</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!-- =========================================================================================================== -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\5 carrot.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">carrot</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="fruitsbox">
+	<div class="fruits-box-div1">
+		<div>
+			<img src="photos\23 avocado.jpg" class="fruits-img">
+		</div>
+
+		<button class="add-btn">
+				add
+		</button>
+	</div>
+
+	<div class="fruits-box-div2">
+		<div class="fruits-name-div">
+			<span class="fruits_name" id="s-name">avocado</span>
+				<div class="fruits-price-div">
+					<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+					<b><big id="f-price">200₹ kg</big></b>
+					<span class="off">20%off</span>
+				</div>
+		</div>	
+
+		<select class="quantity_btn">
+			<option> Quantity</option>
+			   <option>1 kg</option>
+			<option>1/5 kg</option>
+			<option>250 gm</option>
+		</select>
+	</div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\5 cucumber.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">cucumber</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\6 peas.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">peas</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\7 cabbage.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="m-name">cabbage</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\8 cauliflower.jpeg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="d-name">cauliflower</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\9 cabieg.png" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="m-name">cabieg</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\10 ladysfinger.jpeg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="m-name">ladysfinger</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\11 britter groate.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">britter</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\12 cepsi cum.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">cepsi cum</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\13 dhaniya.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">dhaniya</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\13 loki.jpeg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">loki</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\14 kadipatta.webp" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">kadipatta</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\15 mirchi.webp" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">mirchi</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\17 mashroom.webp" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">mashroom</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\19 brokli.png" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="d-name">brokli</s8an>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\20 green pepar.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="d-name">green pepar</span>
+					<div class="fruits-price-div">
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\21 pineapple.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">Pineapple</span>
+					<div class="fruits-price-div">
+						<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\21 con.webp" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="d-name">con</span>
+					<div class="fruits-price-div">
+						<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\22 lettuce.webp" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">lettuce</span>
+					<div class="fruits-price-div">
+						<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\24 pumpkin.png" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">pumpkin</span>
+					<div class="fruits-price-div">
+						<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fruitsbox">
+		<div class="fruits-box-div1">
+			<div>
+				<img src="photos\27 awla.jpg" class="fruits-img">
+			</div>
+
+			<button class="add-btn">
+					add
+			</button>
+		</div>
+
+		<div class="fruits-box-div2">
+			<div class="fruits-name-div">
+				<span class="fruits_name" id="s-name">awla</span>
+					<div class="fruits-price-div">
+						<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+						<b><big id="f-price">200₹ kg</big></b>
+						<span class="off">20%off</span>
+					</div>
+			</div>	
+
+			<select class="quantity_btn">
+				<option> Quantity</option>
+				   <option>1 kg</option>
+				<option>1/5 kg</option>
+				<option>250 gm</option>
+			</select>
+		</div>
+	</div>
+</div>
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+<div class="fruits-main-box">
+
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\1 fruits apple.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">apple</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">600₹ 6pcs</strike>
+							<b><big id="f-price">200₹ kg</big>
+							<span class="off">20%off</span>
+						</b>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\mango.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">mango</span>
+						<div class="fruits-price-div" style="margin-top: 5px;">
+							<strike id="n-p">600₹ 6pcs</strike>
+							<br>
+							<b><big id="f-price">500₹ 6pcs </big>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos/3 fruits pomogrenat.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name"id="b-name">Pomegranate</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\4 fruits orenge.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">orenge</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!-- =========================================================================================================== -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\5 fruits sitafal.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">sitafal</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\6 fruits papaya.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">papaya</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\7 fruits plum.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">plum</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\8 fruits strobery.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="m-name">strobery</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\9 fruits  royal.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="d-name">royalgala apple</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\10 fruits maskmelon.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="m-name">maskmelon</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\11 fruits watermelon.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="m-name">watermelon</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\12 fruits chery.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">chery</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\13 fruits  banana.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">banana</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\14 fruits graps.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">graps</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\15 fruits kiwi.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">kiwi</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\16 fruits payrs.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">pear</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\17  fruits lemon.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">lemon</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\18 fruits lychee.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">lychee</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\19 fruits greany apple.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="d-name">greany apple</s8an>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\20 ilaychi banana.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="d-name">ilaychibanana</span>
+						<div class="fruits-price-div">
+							<strike id="n-p">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\21 pineapple.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">Pineapple</span>
+						<div class="fruits-price-div">
+							<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\22 black grapes.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="d-name">black grapes</span>
+						<div class="fruits-price-div">
+							<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\23 avocado.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">avocado</span>
+						<div class="fruits-price-div">
+							<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\24 guava.png" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">guava</span>
+						<div class="fruits-price-div">
+							<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\25 dragon fruit.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="d-name">dragon fruit</span>
+						<div class="fruits-price-div">
+							<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\26 blueberry.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">blueberry</span>
+						<div class="fruits-price-div">
+							<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\27 awla.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="s-name">awla</span>
+						<div class="fruits-price-div">
+							<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+	<!--------------------------------------------------------------------------------------------------------------------------------------- -->
+		<div class="fruitsbox">
+			<div class="fruits-box-div1">
+				<div>
+					<img src="photos\28 desi orange.jpg" class="fruits-img">
+				</div>
+	
+				<button class="add-btn">
+						add
+				</button>
+			</div>
+	
+			<div class="fruits-box-div2">
+				<div class="fruits-name-div">
+					<span class="fruits_name" id="d-name">desi orange</span>
+						<div class="fruits-price-div">
+							<strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+							<b><big id="f-price">200₹ kg</big></b>
+							<span class="off">20%off</span>
+						</div>
+				</div>	
+	
+				<select class="quantity_btn">
+					<option> Quantity</option>
+					   <option>1 kg</option>
+					<option>1/5 kg</option>
+					<option>250 gm</option>
+				</select>
+			</div>
+		</div>
+		</div>
+	</div>
+</center>
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+<center>
+	<div class="service-main-div">
+
+		<div class="service-div">
+			<div class="s-box1">
+				<img src="photos\basket 2.png" class="basket-img">
+			</div>
+			<div class="s-box2">
+				<br>
+				<span style="font-family: cursive; font-size: 25px; "> fresh fruits basket </span>
+			<br><br>
+			<span style="font-family: cursive; font-size: 15px; color: red;"> starting for ₹999/- only  </span>
+			<a href="http://127.0.0.1:5500/fruitsbasket.html">
+				<button class="service-btn"> try now </button>
+			</a>
+			</div>
+		</div>
+
+		<div class="service-div">
+			<div class="s-box1">
+				<img src="photos\mango.jpg" class="mango-img">
+			</div>
+			<div class="s-box2">
+				<br>
+				<span style="font-family: cursive; font-size: 25px; ">  all mangos hear  </span>
+			<br><br>
+			<span style="font-family: cursive; font-size: 15px; color: red;"> starting for ₹99/- kg only  </span>
+			<a href="http://127.0.0.1:5500/mango.html">
+				<button class="service-btn"> try now </button>
+			</a>
+			</div>
+		</div>
+
+		<div class="service-div">
+			<div class="s-box1">
+				<img src="photos\dray fruits.png" class="dray-img">
+			</div>
+			<div class="s-box2">
+				<br>
+				<span style="font-family: cursive; font-size: 25px; ">try dray fruits</span>
+			<br><br>
+			<span style="font-family: cursive; font-size: 15px; color: red;"> starting for ₹1999/- only   </span>
+			<a href="http://127.0.0.1:5500/drayfruits.html">
+				<button class="service-btn"> try now </button>
+			</a>
+			</div>
+		</div>
+
+		<div class="service-div">
+			<div class="s-box1">
+				<img src="photos\salad 1.png" class="salad-img">
+			</div>
+			<div class="s-box2">
+				<br>
+				<span style="font-family: cursive; font-size: 25px; ">  mix fruits selad  </span>
+			<br><br>
+			<span style="font-family: cursive; font-size: 15px; color: red;"> starting for ₹299/- only  </span>
+			<a href="http://127.0.0.1:5500/salad.html">
+				<button class="service-btn"> try now </button>
+			</a>
+			</div>
+		</div>
+
+	</div>
+</center>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<footer class="footer">
+	<table>
+		<th>
+			<td>
+				<div class="f-1">
+					<a href="#">thenitishjaiswalgmail.com</a>
+					<br>
+					<a href="#">shop address</a>
+					<br>
+					<a href="#">+91 9867657546</a>
+				</div>
+			</td>
+			<td>
+				<div class="f-2">
+					<a href="#">gopal jaiswal</a>
+					<br>
+					<a href="#">nitish jaiswal</a>
+				</div>
+			</td>
+			<td>
+				<div class="f-3">
+					<img height="30" src="https://shoplineimg.com/assets/footer/card_visa.png"/>
+					<br>
+					<img height="30" src="https://shoplineimg.com/assets/footer/card_master.png"/>
+					<br>
+					<img height="30" src="https://shoplineimg.com/assets/footer/card_paypal.png"/>
+					<br>
+					<img height="30" src="https://shoplineimg.com/assets/footer/card_linepay.png"/>
+				</div>
+			</td>
+			<td>
+				<div class="f-4"></div>
+			</td>
+		</th>
+	</table>
+</footer>
+<a href="https://web.whatsapp.com/9867657546" target="_blank" title="chat with whatsapp" style="text-decoration: none;">
+<div class="whatsapp"></div>
+</a>
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+
+</body>  
+</html>

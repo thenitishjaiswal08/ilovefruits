@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .main-salad-div{
+            margin-top: 20px;
+            background-color: white;
+            height: 230px;
+            width: 800px;
+            border-radius: 30px;
+            box-shadow: 1px 1px 20px;
+            margin-bottom: 50px;
+        }
+        .main-salad-div:hover{
+	transform: scale(1.05,1.05);
+	transition: 0.2s;
+}
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="ilovefruits.css">
+	<script src="ilovefruits.js"></script>
+    <title> main paage </title>
+</head>
+<body style="background-color: #135D66;">
+
+    <nav class="navigationebar">
+        <div class="logo"></div>
+        <button class="add-carrt-btn">
+            <img src="photos\shopping.png" class="logo-img-cart" id="shoping-btn" onclick="opencart()">
+        </button>
+        <button class="nav-btn" onclick="opentloginpage()">
+            <img src="photos\ragistratione.png" class="logo-img-login" id="login-btn">
+        </button>
+        <button class="nav-btn"  onclick="opencontactpage()">
+            <img src="photos\phone.png" class="logo-img-contact" id="contect-btn">
+        </button>
+    </nav>
+
+
+    <div class="add-cart">
+		<button style="background-color:transparent; border-color:transparent; " onclick="closecart()"><div class="close-btn"></div></button>
+		<div style=" height:360px; width: 90%; margin-top: 30px; margin-left: 30px;">
+			<span style="font-size: 19px; padding-top: 30px;"> hii ! add yoour shoping</span>
+		</div>
+		<div>
+			<button class="add-btn" style="margin-left: 65px; font-size: 14px; ">make peyment</button>
+		</div>
+	</div>
+
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+<div class="big-login-box" onclick="closebigloginpge()"></div>
+<div class="login-box">
+        <div><button onclick="closepage()" title="close" class="close-button">&times</button></div>
+        <br>
+        <form>
+        <center>
+                <span class="login-word">login</span>
+                <br>
+                <input type="email" name="email" requied="" placeholder=" email or phone number" class="login-input" style="margin-top: 10px;">
+                <input type="password" name="password" required="" placeholder=" password" class="login-input">
+
+                <button title="login" class="login-button">login</button>
+                <br><br>
+                <a href="#" class="fcoptione" onclick="openforgotpasswordpage()">forgot password</a>
+                 <a href="#" onclick="openragistrationepage()" class="coptione">create account</a>
+            </center>
+        </form>
+    </div>
+
+
+<div class="ragistratione-box">
+    <form>
+        <div>
+            <button title="close" class="close-button" onclick="closepager()">&times</button></div>
+                <center>
+                    <br>
+                    <span class="ragistratione-word">create account</span>
+                    <input type="email" name="email" requied="" placeholder=" email id" class="ragistratione-input">
+                    <input type="phone" name="email" requied="" placeholder=" phone number" class="ragistratione-input">
+                    <input type="password" name="password" required="" placeholder=" password" class="ragistratione-input">
+                    <button class="ragistratione-button">create</button>	
+                </div>
+            </center>
+    </form>
+</div>
+
+
+<div class="forgotpassword-box">
+    <form>
+        <br><br>
+        <div><button onclick="closepagef()" title="close" class="close-button">&times</button></div>
+        <center>
+            <br>
+            <span class="forgotpassword-word">create account</span>
+            <input type="contact" name="contact" requied="" placeholder="  +91 |" class="forgotpassword-input">
+            <br>
+                    <button class="forgotpassword-button" onclick="getpaswordpage()">get otp</button>	
+            </div>
+        </center>
+    </form>
+</div>
+<div class="getpasword-box">
+    <form>
+        <br><br>
+        <div><button onclick="closepageg()" title="close" class="close-button">&times</button></div>
+            <center>
+            <br>
+            <span class="getpasword-word">create account</span>
+            <input type="contact" name="contact" requied="" placeholder="  OTP" class="getpasword-input">
+            <br>
+                <button class="getpasword-button">get otp</button>	
+        </div>
+        </center>
+    </form>
+</div>
+
+<div class="contact-box">
+<div><button onclick="closepag()" title="close" class="close-button">&times</button></div>
+
+<center>
+    <h1 style="margin-top: 35px; color: #fff;" id="c">contact</h1>
+    <h6 style="margin-top: 35px; color: #fff;" id="i">thenitishjaiswal@gmail.com</h6>
+    <h6 style="margin-top: 15px; color: #fff;" id="i"> +91 9867657546 </h6>
+
+
+       <a href="https:www.instagram.com/ilovefruits.in" target="_blank" style="text-decoration: none;">
+            <img src="photos\instagram.jpg" class="iconimg" id="hover">
+       </a>
+
+       <a href="https://web.whatsapp.com/9867657546" target="_blank" style="text-decoration: none;">
+            <img src="photos\watsapp.jpg" class="iconimg" id="hover">
+       </a>
+
+       <a href="https://twitter.com/nitishj87137878" target="_blank" style="text-decoration: none;">
+        <img src="photos\twiter.jpg" class="iconimg" id="hover">
+       </a>
+
+       <a href="https://www.facebook.com/profile.php?id=100013471294419" target="_blank" style="text-decoration: none;">
+        <img src="photos\facebook.jpg" class="iconimg" id="hover"> 
+       </a>
+</center>
+</div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+
+    <center>
+        <div>
+            <div class="main-salad-div">
+            <div class="b1-div">
+                <img src="photos\s1.png" class="salad-img" style="margin-left: 50px; height: 200px; margin-top: 10px;">
+            </div>
+            <div class="b2-div">
+                <br>
+			<span style="font-family: cursive; font-size: 25px; ">  normal family fruits salad  </span>
+            <br>
+			<span style="font-family: cursive; font-size: 20px; color: red;"> ₹999/- only  </span>
+            <br>
+			<button class="service-btn"> add </button>
+            </div>
+            </div>
+
+            <div class="main-salad-div">
+                <div class="b1-div">
+                    <img src="photos\s2.webp" class="salad-img" style="margin-left: 50px; height: 200px; margin-top: 10px;">
+                </div>
+                <div class="b2-div">
+                    <br>
+                <span style="font-family: cursive; font-size: 25px; "> normal fruits salad </span>
+                <br>
+                <span style="font-family: cursive; font-size: 20px; color: red;"> ₹399/- only  </span>
+                <br>
+                <button class="service-btn"> add </button>
+                </div>
+                </div>
+
+                <div class="main-salad-div">
+                    <div class="b1-div">
+                        <img src="photos\s3.png" class="salad-img" style="margin-left: 50px; height: 200px; margin-top: 10px;">
+                    </div>
+                    <div class="b2-div">
+                        <br>
+                    <span style="font-family: cursive; font-size: 25px; "> normal glass fruits salad </span>
+                    <br>
+                    <span style="font-family: cursive; font-size: 20px; color: red;"> ₹399/- only  </span>
+                    <br>
+                    <button class="service-btn"> add </button>
+                    </div>
+                    </div>
+
+                    <div class="main-salad-div">
+                        <div class="b1-div">
+                            <img src="photos\s4.jpg" class="salad-img" style="margin-left: 50px; height: 200px; margin-top: 10px;">
+                        </div>
+                        <div class="b2-div">
+                            <br>
+                        <span style="font-family: cursive; font-size: 25px; ">normal glass fruits salad  </span>
+                        <br>
+                        <span style="font-family: cursive; font-size: 20px; color: red;"> ₹199/- only  </span>
+                        <br>
+                        <button class="service-btn"> add </button>
+                        </div>
+                        </div>
+
+                        <div class="main-salad-div">
+                            <div class="b1-div">
+                                <img src="photos\s6.webp" class="salad-img" style="margin-left: 50px; height: 200px; margin-top: 10px;">
+                            </div>
+                            <div class="b2-div">
+                                <br>
+                            <span style="font-family: cursive; font-size: 25px; ">  normal fruits cream salad   </span>
+                            <br>
+                            <span style="font-family: cursive; font-size: 20px; color: red;"> ₹411/- only  </span>
+                            <br>
+                            <button class="service-btn"> add </button>
+                            </div>
+                            </div>
+
+                            <div class="main-salad-div">
+                                <div class="b1-div">
+                                    <img src="photos\s7.jpg" class="salad-img" style="margin-left: 50px; height: 200px; margin-top: 10px;">
+                                </div>
+                                <div class="b2-div">
+                                    <br>
+                                <span style="font-family: cursive; font-size: 25px; "> normal fruits cream salad  </span>
+                                <br>
+                                <span style="font-family: cursive; font-size: 20px; color: red;"> ₹499/- only  </span>
+                                <br>
+                                <button class="service-btn"> add </button>
+                                </div>
+                                </div>
+
+                                <div class="main-salad-div">
+                                    <div class="b1-div">
+                                        <img src="photos\salad 1.png" class="salad-img" style="margin-left: 50px; height: 200px; margin-top: 10px;">
+                                    </div>
+                                    <div class="b2-div">
+                                        <br>
+                                    <span style="font-family: cursive; font-size: 25px; ">  ilovefruits special fruits salad </span>
+                                    <br>
+                                    <span style="font-family: cursive; font-size: 20px; color: red;"> ₹1999/- only  </span>
+                                    <br>
+                                    <button class="service-btn"> add </button>
+                                    </div>
+                                    </div>
+        </div>
+    </center>
+</body>
+</html>

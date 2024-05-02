@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="ilovefruits.css">
+	<script src="ilovefruits.js"></script>
+    <title> main paage </title>
+</head>
+
+<style>
+    .main-mango{
+        width: 900px;
+        margin-top: 40px;
+    }
+</style>
+<body style="background-color: #135D66;">
+
+    <nav class="navigationebar">
+        <div class="logo"></div>
+        <button class="add-carrt-btn">
+            <img src="photos\shopping.png" class="logo-img-cart" id="shoping-btn" onclick="opencart()">
+        </button>
+        <button class="nav-btn" onclick="opentloginpage()">
+            <img src="photos\ragistratione.png" class="logo-img-login" id="login-btn">
+        </button>
+        <button class="nav-btn"  onclick="opencontactpage()">
+            <img src="photos\phone.png" class="logo-img-contact" id="contect-btn">
+        </button>
+    </nav>
+
+
+    <div class="add-cart">
+		<button style="background-color:transparent; border-color:transparent; " onclick="closecart()"><div class="close-btn"></div></button>
+		<div style=" height:360px; width: 90%; margin-top: 30px; margin-left: 30px;">
+			<span style="font-size: 19px; padding-top: 30px;"> hii ! add yoour shoping</span>
+		</div>
+		<div>
+			<button class="add-btn" style="margin-left: 65px; font-size: 14px; ">make peyment</button>
+		</div>
+	</div>
+
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+
+<div class="big-login-box" onclick="closebigloginpge()"></div>
+	<div class="login-box">
+			<div><button onclick="closepage()" title="close" class="close-button">&times</button></div>
+			<br>
+			<form>
+			<center>
+					<span class="login-word">login</span>
+					<br>
+					<input type="email" name="email" requied="" placeholder=" email or phone number" class="login-input" style="margin-top: 10px;">
+					<input type="password" name="password" required="" placeholder=" password" class="login-input">
+
+					<button title="login" class="login-button">login</button>
+					<br><br>
+					<a href="#" class="fcoptione" onclick="openforgotpasswordpage()">forgot password</a>
+			 		<a href="#" onclick="openragistrationepage()" class="coptione">create account</a>
+				</center>
+			</form>
+		</div>
+
+
+	<div class="ragistratione-box">
+		<form>
+			<div>
+				<button title="close" class="close-button" onclick="closepager()">&times</button></div>
+					<center>
+						<br>
+						<span class="ragistratione-word">create account</span>
+						<input type="email" name="email" requied="" placeholder=" email id" class="ragistratione-input">
+						<input type="phone" name="email" requied="" placeholder=" phone number" class="ragistratione-input">
+						<input type="password" name="password" required="" placeholder=" password" class="ragistratione-input">
+    					<button class="ragistratione-button">create</button>	
+					</div>
+				</center>
+		</form>
+	</div>
+
+
+	<div class="forgotpassword-box">
+		<form>
+			<br><br>
+			<div><button onclick="closepagef()" title="close" class="close-button">&times</button></div>
+			<center>
+				<br>
+				<span class="forgotpassword-word">create account</span>
+				<input type="contact" name="contact" requied="" placeholder="  +91 |" class="forgotpassword-input">
+				<br>
+    					<button class="forgotpassword-button" onclick="getpaswordpage()">get otp</button>	
+				</div>
+			</center>
+		</form>
+	</div>
+	<div class="getpasword-box">
+		<form>
+			<br><br>
+			<div><button onclick="closepageg()" title="close" class="close-button">&times</button></div>
+				<center>
+				<br>
+				<span class="getpasword-word">create account</span>
+				<input type="contact" name="contact" requied="" placeholder="  OTP" class="getpasword-input">
+				<br>
+    				<button class="getpasword-button">get otp</button>	
+			</div>
+			</center>
+		</form>
+</div>
+
+<div class="contact-box">
+	<div><button onclick="closepag()" title="close" class="close-button">&times</button></div>
+
+	<center>
+		<h1 style="margin-top: 35px; color: #fff;" id="c">contact</h1>
+		<h6 style="margin-top: 35px; color: #fff;" id="i">thenitishjaiswal@gmail.com</h6>
+		<h6 style="margin-top: 15px; color: #fff;" id="i"> +91 9867657546 </h6>
+
+
+           <a href="https:www.instagram.com/ilovefruits.in" target="_blank" style="text-decoration: none;">
+            	<img src="photos\instagram.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://web.whatsapp.com/9867657546" target="_blank" style="text-decoration: none;">
+           	 <img src="photos\watsapp.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://twitter.com/nitishj87137878" target="_blank" style="text-decoration: none;">
+            <img src="photos\twiter.jpg" class="iconimg" id="hover">
+           </a>
+
+           <a href="https://www.facebook.com/profile.php?id=100013471294419" target="_blank" style="text-decoration: none;">
+            <img src="photos\facebook.jpg" class="iconimg" id="hover"> 
+		   </a>
+	</center>
+</div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+
+<center>
+    <div class="main-mango">
+        <div class="fruitsbox">
+            <div class="fruits-box-div1">
+                <div>
+                    <img src="photos\1 alphanso.jpeg" class="fruits-img">
+                </div>
+    
+                <button class="add-btn">
+                        add
+                </button>
+            </div>
+    
+            <div class="fruits-box-div2">
+                <div class="fruits-name-div">
+                    <span class="fruits_name" id="s-name">alphanso </span>
+                        <div class="fruits-price-div">
+                            <b><big id="f-price">400₹ kg</big>
+                            <span class="off">20%off</span>
+                        </b>
+                        </div>
+                </div>	
+    
+                <select class="quantity_btn">
+                    <option> Quantity</option>
+                       <option>1 kg</option>
+                    <option>1/5 kg</option>
+                    <option>250 gm</option>
+                </select>
+            </div>
+        </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="fruitsbox">
+            <div class="fruits-box-div1">
+                <div>
+                    <img src="\photos\2 fruits mango.jpg" class="fruits-img">
+                </div>
+    
+                <button class="add-btn">
+                        add
+                </button>
+            </div>
+    
+            <div class="fruits-box-div2">
+                <div class="fruits-name-div">
+                    <span class="fruits_name" id="s-name">red</span>
+                        <div class="fruits-price-div" style="margin-top: 5px;">
+                            <br>
+                            <b><big id="f-price">500₹ 6pcs </big>
+                            <span class="off">20%off</span>
+                        </div>
+                </div>	
+    
+                <select class="quantity_btn">
+                    <option> Quantity</option>
+                       <option>1 kg</option>
+                    <option>1/5 kg</option>
+                    <option>250 gm</option>
+                </select>
+            </div>
+        </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="fruitsbox">
+            <div class="fruits-box-div1">
+                <div>
+                    <img src="photos\3 kesar.jpeg" class="fruits-img">
+                </div>
+    
+                <button class="add-btn">
+                        add
+                </button>
+            </div>
+    
+            <div class="fruits-box-div2">
+                <div class="fruits-name-div">
+                    <span class="fruits_name"id="b-name">kesar</span>
+                        <div class="fruits-price-div">
+                            <b><big id="f-price">200₹ kg</big></b>
+                            <span class="off">20%off</span>
+                        </div>
+                </div>	
+    
+                <select class="quantity_btn">
+                    <option> Quantity</option>
+                       <option>1 kg</option>
+                    <option>1/5 kg</option>
+                    <option>250 gm</option>
+                </select>
+            </div>
+        </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="fruitsbox">
+            <div class="fruits-box-div1">
+                <div>
+                    <img src="photos\4 paeri.webp" class="fruits-img">
+                </div>
+    
+                <button class="add-btn">
+                        add
+                </button>
+            </div>
+    
+            <div class="fruits-box-div2">
+                <div class="fruits-name-div">
+                    <span class="fruits_name" id="s-name">paeri</span>
+                        <div class="fruits-price-div">
+                            <b><big id="f-price">150₹ kg</big></b>
+                            <span class="off">20%off</span>
+                        </div>
+                </div>	
+    
+                <select class="quantity_btn">
+                    <option> Quantity</option>
+                       <option>1 kg</option>
+                    <option>1/5 kg</option>
+                    <option>250 gm</option>
+                </select>
+            </div>
+        </div>
+    <!-- =========================================================================================================== -->
+        <div class="fruitsbox">
+            <div class="fruits-box-div1">
+                <div>
+                    <img src="photos\2 badam.jpeg" class="fruits-img">
+                </div>
+    
+                <button class="add-btn">
+                        add
+                </button>
+            </div>
+    
+            <div class="fruits-box-div2">
+                <div class="fruits-name-div">
+                    <span class="fruits_name" id="s-name">badam </span>
+                        <div class="fruits-price-div">
+                            <b><big id="f-price">100₹ kg</big></b>
+                            <span class="off">20%off</span>
+                        </div>
+                </div>	
+    
+                <select class="quantity_btn">
+                    <option> Quantity</option>
+                       <option>1 kg</option>
+                    <option>1/5 kg</option>
+                    <option>250 gm</option>
+                </select>
+            </div>
+        </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="fruitsbox">
+        <div class="fruits-box-div1">
+            <div>
+                <img src="photos\5 raja.jpg" class="fruits-img">
+            </div>
+    
+            <button class="add-btn">
+                    add
+            </button>
+        </div>
+    
+        <div class="fruits-box-div2">
+            <div class="fruits-name-div">
+                <span class="fruits_name" id="s-name">rajapuri</span>
+                    <div class="fruits-price-div">
+                        <strike style="color:#a645c0; margin-left:0px; font-size: 10px;">250₹</strike>
+                        <b><big id="f-price">100₹ kg</big></b>
+                        <span class="off">20%off</span>
+                    </div>
+            </div>	
+    
+            <select class="quantity_btn">
+                <option> Quantity</option>
+                   <option>1 kg</option>
+                <option>1/5 kg</option>
+                <option>250 gm</option>
+            </select>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------- -->
+    
+    <div class="fruitsbox">
+            <div class="fruits-box-div1">
+                <div>
+                    <img src="photos\6 tota.jpg" class="fruits-img">
+                </div>
+    
+                <button class="add-btn">
+                        add
+                </button>
+            </div>
+    
+            <div class="fruits-box-div2">
+                <div class="fruits-name-div">
+                    <span class="fruits_name" id="s-name">totapari</span>
+                        <div class="fruits-price-div">
+                            <b><big id="f-price">200₹ kg</big></b>
+                            <span class="off">20%off</span>
+                        </div>
+                </div>	
+    
+                <select class="quantity_btn">
+                    <option> Quantity</option>
+                       <option>1 kg</option>
+                    <option>1/5 kg</option>
+                    <option>250 gm</option>
+                </select>
+            </div>
+        </div>
+        <div class="fruitsbox">
+            <div class="fruits-box-div1">
+                <div>
+                    <img src="photos\6 peas.jpg" class="fruits-img">
+                </div>
+    
+                <button class="add-btn">
+                        add
+                </button>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------ -->
+            <div class="fruits-box-div2">
+                <div class="photos\7 lalbag.webp">
+                    <span class="fruits_name" id="s-name">lal bag</span>
+                        <div class="fruits-price-div">
+                            <b><big id="f-price">100₹ kg</big></b>
+                            <span class="off">30%off</span>
+                        </div>
+                </div>	
+    
+                <select class="quantity_btn">
+                    <option> Quantity</option>
+                       <option>1 kg</option>
+                    <option>1/5 kg</option>
+                    <option>250 gm</option>
+                </select>
+            </div>
+        </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="fruitsbox">
+            <div class="fruits-box-div1">
+                <div>
+                    <img src="photos\10 deshari.webp" class="fruits-img">
+                </div>
+    
+                <button class="add-btn">
+                        add
+                </button>
+            </div>
+    
+            <div class="fruits-box-div2">
+                <div class="fruits-name-div">
+                    <span class="fruits_name" id="m-name">mix mango</span>
+                        <div class="fruits-price-div">
+                            <b><big id="f-price">200₹ kg</big></b>
+                            <span class="off">20%off</span>
+                        </div>
+                </div>	
+    
+                <select class="quantity_btn">
+                    <option> Quantity</option>
+                       <option>1 kg</option>
+                    <option>1/5 kg</option>
+                    <option>250 gm</option>
+                </select>
+            </div>
+        </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------- -->
+    
+    <div>
+</body>
+</html>
